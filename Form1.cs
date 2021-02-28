@@ -32,5 +32,36 @@ namespace WindowsFormApp
             string name = nameTextBox.Text;
             MessageBox.Show(name + " Hi!");
         }
+        private void addButton_Click_1(object sender, EventArgs e)
+        {
+            double firstNumber = Convert.ToDouble(firstNumberTextBox.Text);
+            double secondNumber = Convert.ToDouble(secondNumberTextBox.Text);
+
+            resultTextBox.Text = (firstNumber + secondNumber).ToString();
+        }
+
+        private void subButton_Click(object sender, EventArgs e)
+        {
+            double firstNumber = Convert.ToDouble(firstNumberTextBox.Text);
+            double secondNumber = Convert.ToDouble(secondNumberTextBox.Text);
+
+            resultTextBox.Text = (firstNumber - secondNumber).ToString();
+        }
+
+        private void multipleButton_Click(object sender, EventArgs e)
+        {
+            double firstNumber = Convert.ToDouble(firstNumberTextBox.Text);
+            double secondNumber = Convert.ToDouble(secondNumberTextBox.Text);
+
+            resultTextBox.Text = (firstNumber * secondNumber).ToString();
+        }
+
+        private void divisionButton_Click(object sender, EventArgs e)
+        {
+            double firstNumber = Convert.ToDouble(firstNumberTextBox.Text);
+            double secondNumber = Convert.ToDouble(secondNumberTextBox.Text);
+
+            resultTextBox.Text = (firstNumber / secondNumber).ToString();
+        }
     }
 }
