@@ -63,5 +63,59 @@ namespace WindowsFormApp
 
             resultTextBox.Text = (firstNumber / secondNumber).ToString();
         }
+
+        private void resultButton_Click(object sender, EventArgs e)
+        {
+            if (oddRadioButton.Checked)
+            {
+                MessageBox.Show("Odd Number");
+            }
+            else if (evenRadioButton.Checked)
+            {
+                MessageBox.Show("Even Number");
+            }
+            else
+            {
+                MessageBox.Show("No Button is selected");
+            }
+        }
+
+        private void resultCheckBoxButton_Click(object sender, EventArgs e)
+        {
+            if (evenCheckBox.Checked && oddCheckBox.Checked == true)
+            {
+                MessageBox.Show("Both are checked");
+            }
+            else if (evenCheckBox.Checked)
+            {
+                MessageBox.Show("Even");
+            }
+            else if (oddCheckBox.Checked)
+            {
+                MessageBox.Show("Odd");
+            }
+            else
+            {
+                MessageBox.Show("No Value");
+            }
+        }
+
+        private void resultComboButton_Click(object sender, EventArgs e)
+        {
+            string item = itemComboBox.Text;
+            MessageBox.Show(item);
+        }
+
+        private void addListBoxTextBox_Click(object sender, EventArgs e)
+        {
+            string name = nameListTextBox.Text;
+            nameListBox.Items.Add(name);
+            nameListTextBox.Text = "";
+        }
+
+        private void clearTextBox_Click(object sender, EventArgs e)
+        {
+            nameListBox.Items.Clear();
+        }
     }
 }

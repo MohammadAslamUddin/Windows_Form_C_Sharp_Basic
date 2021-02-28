@@ -46,9 +46,24 @@
             this.subButton = new System.Windows.Forms.Button();
             this.multipleButton = new System.Windows.Forms.Button();
             this.divisionButton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.oddRadioButton = new System.Windows.Forms.RadioButton();
+            this.evenRadioButton = new System.Windows.Forms.RadioButton();
+            this.resultButton = new System.Windows.Forms.Button();
+            this.oddCheckBox = new System.Windows.Forms.CheckBox();
+            this.evenCheckBox = new System.Windows.Forms.CheckBox();
+            this.resultCheckBoxButton = new System.Windows.Forms.Button();
+            this.itemComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.resultComboButton = new System.Windows.Forms.Button();
+            this.nameListTextBox = new System.Windows.Forms.TextBox();
+            this.nameListBox = new System.Windows.Forms.ListBox();
+            this.addListBoxTextBox = new System.Windows.Forms.Button();
+            this.clearTextBox = new System.Windows.Forms.Button();
             this.work2.SuspendLayout();
             this.work1.SuspendLayout();
             this.work3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // showButton
@@ -231,11 +246,166 @@
             this.divisionButton.UseVisualStyleBackColor = true;
             this.divisionButton.Click += new System.EventHandler(this.divisionButton_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.clearTextBox);
+            this.groupBox1.Controls.Add(this.addListBoxTextBox);
+            this.groupBox1.Controls.Add(this.nameListBox);
+            this.groupBox1.Controls.Add(this.nameListTextBox);
+            this.groupBox1.Controls.Add(this.resultComboButton);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.itemComboBox);
+            this.groupBox1.Controls.Add(this.resultCheckBoxButton);
+            this.groupBox1.Controls.Add(this.evenCheckBox);
+            this.groupBox1.Controls.Add(this.oddCheckBox);
+            this.groupBox1.Controls.Add(this.resultButton);
+            this.groupBox1.Controls.Add(this.evenRadioButton);
+            this.groupBox1.Controls.Add(this.oddRadioButton);
+            this.groupBox1.Location = new System.Drawing.Point(141, 256);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(656, 257);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Work-4";
+            // 
+            // oddRadioButton
+            // 
+            this.oddRadioButton.AutoSize = true;
+            this.oddRadioButton.Location = new System.Drawing.Point(6, 29);
+            this.oddRadioButton.Name = "oddRadioButton";
+            this.oddRadioButton.Size = new System.Drawing.Size(45, 17);
+            this.oddRadioButton.TabIndex = 0;
+            this.oddRadioButton.TabStop = true;
+            this.oddRadioButton.Text = "Odd";
+            this.oddRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // evenRadioButton
+            // 
+            this.evenRadioButton.AutoSize = true;
+            this.evenRadioButton.Location = new System.Drawing.Point(6, 52);
+            this.evenRadioButton.Name = "evenRadioButton";
+            this.evenRadioButton.Size = new System.Drawing.Size(50, 17);
+            this.evenRadioButton.TabIndex = 0;
+            this.evenRadioButton.TabStop = true;
+            this.evenRadioButton.Text = "Even";
+            this.evenRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // resultButton
+            // 
+            this.resultButton.Location = new System.Drawing.Point(6, 75);
+            this.resultButton.Name = "resultButton";
+            this.resultButton.Size = new System.Drawing.Size(75, 23);
+            this.resultButton.TabIndex = 1;
+            this.resultButton.Text = "Result";
+            this.resultButton.UseVisualStyleBackColor = true;
+            this.resultButton.Click += new System.EventHandler(this.resultButton_Click);
+            // 
+            // oddCheckBox
+            // 
+            this.oddCheckBox.AutoSize = true;
+            this.oddCheckBox.Location = new System.Drawing.Point(112, 19);
+            this.oddCheckBox.Name = "oddCheckBox";
+            this.oddCheckBox.Size = new System.Drawing.Size(76, 17);
+            this.oddCheckBox.TabIndex = 2;
+            this.oddCheckBox.Text = "Odd Value";
+            this.oddCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // evenCheckBox
+            // 
+            this.evenCheckBox.AutoSize = true;
+            this.evenCheckBox.Location = new System.Drawing.Point(112, 42);
+            this.evenCheckBox.Name = "evenCheckBox";
+            this.evenCheckBox.Size = new System.Drawing.Size(81, 17);
+            this.evenCheckBox.TabIndex = 2;
+            this.evenCheckBox.Text = "Even Value";
+            this.evenCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // resultCheckBoxButton
+            // 
+            this.resultCheckBoxButton.Location = new System.Drawing.Point(112, 75);
+            this.resultCheckBoxButton.Name = "resultCheckBoxButton";
+            this.resultCheckBoxButton.Size = new System.Drawing.Size(75, 23);
+            this.resultCheckBoxButton.TabIndex = 3;
+            this.resultCheckBoxButton.Text = "Result";
+            this.resultCheckBoxButton.UseVisualStyleBackColor = true;
+            this.resultCheckBoxButton.Click += new System.EventHandler(this.resultCheckBoxButton_Click);
+            // 
+            // itemComboBox
+            // 
+            this.itemComboBox.FormattingEnabled = true;
+            this.itemComboBox.Items.AddRange(new object[] {
+            "Book",
+            "Eraser",
+            "Guide",
+            "Pen",
+            "Pencil"});
+            this.itemComboBox.Location = new System.Drawing.Point(240, 15);
+            this.itemComboBox.Name = "itemComboBox";
+            this.itemComboBox.Size = new System.Drawing.Size(121, 21);
+            this.itemComboBox.Sorted = true;
+            this.itemComboBox.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(194, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Items";
+            // 
+            // resultComboButton
+            // 
+            this.resultComboButton.Location = new System.Drawing.Point(256, 50);
+            this.resultComboButton.Name = "resultComboButton";
+            this.resultComboButton.Size = new System.Drawing.Size(80, 30);
+            this.resultComboButton.TabIndex = 6;
+            this.resultComboButton.Text = "Result";
+            this.resultComboButton.UseVisualStyleBackColor = true;
+            this.resultComboButton.Click += new System.EventHandler(this.resultComboButton_Click);
+            // 
+            // nameListTextBox
+            // 
+            this.nameListTextBox.AcceptsTab = true;
+            this.nameListTextBox.Location = new System.Drawing.Point(382, 17);
+            this.nameListTextBox.Name = "nameListTextBox";
+            this.nameListTextBox.Size = new System.Drawing.Size(112, 20);
+            this.nameListTextBox.TabIndex = 0;
+            // 
+            // nameListBox
+            // 
+            this.nameListBox.FormattingEnabled = true;
+            this.nameListBox.Location = new System.Drawing.Point(505, 17);
+            this.nameListBox.Name = "nameListBox";
+            this.nameListBox.Size = new System.Drawing.Size(120, 147);
+            this.nameListBox.TabIndex = 3;
+            // 
+            // addListBoxTextBox
+            // 
+            this.addListBoxTextBox.Location = new System.Drawing.Point(419, 49);
+            this.addListBoxTextBox.Name = "addListBoxTextBox";
+            this.addListBoxTextBox.Size = new System.Drawing.Size(75, 23);
+            this.addListBoxTextBox.TabIndex = 1;
+            this.addListBoxTextBox.Text = "Add";
+            this.addListBoxTextBox.UseVisualStyleBackColor = true;
+            this.addListBoxTextBox.Click += new System.EventHandler(this.addListBoxTextBox_Click);
+            // 
+            // clearTextBox
+            // 
+            this.clearTextBox.Location = new System.Drawing.Point(419, 78);
+            this.clearTextBox.Name = "clearTextBox";
+            this.clearTextBox.Size = new System.Drawing.Size(75, 23);
+            this.clearTextBox.TabIndex = 2;
+            this.clearTextBox.Text = "Clear";
+            this.clearTextBox.UseVisualStyleBackColor = true;
+            this.clearTextBox.Click += new System.EventHandler(this.clearTextBox_Click);
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 646);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.work3);
             this.Controls.Add(this.work1);
             this.Controls.Add(this.work2);
@@ -246,6 +416,8 @@
             this.work1.ResumeLayout(false);
             this.work3.ResumeLayout(false);
             this.work3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -270,6 +442,20 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox firstNumberTextBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button resultButton;
+        private System.Windows.Forms.RadioButton evenRadioButton;
+        private System.Windows.Forms.RadioButton oddRadioButton;
+        private System.Windows.Forms.CheckBox evenCheckBox;
+        private System.Windows.Forms.CheckBox oddCheckBox;
+        private System.Windows.Forms.Button resultCheckBoxButton;
+        private System.Windows.Forms.Button resultComboButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox itemComboBox;
+        private System.Windows.Forms.Button clearTextBox;
+        private System.Windows.Forms.Button addListBoxTextBox;
+        private System.Windows.Forms.ListBox nameListBox;
+        private System.Windows.Forms.TextBox nameListTextBox;
     }
 }
 
