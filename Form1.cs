@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormApp
 {
-    public partial class Form1 : Form
+    public partial class MainUI : Form
     {
-        public Form1()
+        public MainUI()
         {
             InitializeComponent();
         }
@@ -25,6 +25,12 @@ namespace WindowsFormApp
         private void anotherButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hello From Another Button");
+        }
+
+        private void displayButton_Click(object sender, EventArgs e)
+        {
+            string name = nameTextBox.Text;
+            MessageBox.Show(name + " Hi!");
         }
     }
 }
