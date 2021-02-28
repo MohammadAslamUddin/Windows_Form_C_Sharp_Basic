@@ -16,5 +16,15 @@ namespace WindowsFormApp
         {
             InitializeComponent();
         }
+
+        private void showButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello Buddy!");
+        }
+
+        private void anotherButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello From Another Button");
+        }
     }
 }
