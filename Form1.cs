@@ -117,5 +117,20 @@ namespace WindowsFormApp
         {
             nameListBox.Items.Clear();
         }
+
+
+        //WORK - 5
+        private string name;
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            name = name5TextBox.Text;
+            name5TextBox.Text = String.Empty;
+            
+        }
+
+        private void show5Button_Click(object sender, EventArgs e)
+        {
+            name5Label.Text = name;
+        }
     }
 }
