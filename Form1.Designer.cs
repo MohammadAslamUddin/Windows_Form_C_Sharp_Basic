@@ -61,11 +61,11 @@
             this.evenRadioButton = new System.Windows.Forms.RadioButton();
             this.oddRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.name5TextBox = new System.Windows.Forms.TextBox();
-            this.saveButton = new System.Windows.Forms.Button();
-            this.show5Button = new System.Windows.Forms.Button();
             this.name5Label = new System.Windows.Forms.Label();
+            this.show5Button = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.name5TextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.work2.SuspendLayout();
             this.work1.SuspendLayout();
             this.work3.SuspendLayout();
@@ -421,31 +421,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Work-5";
             // 
-            // label3
+            // name5Label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Name";
-            // 
-            // name5TextBox
-            // 
-            this.name5TextBox.Location = new System.Drawing.Point(78, 33);
-            this.name5TextBox.Name = "name5TextBox";
-            this.name5TextBox.Size = new System.Drawing.Size(100, 20);
-            this.name5TextBox.TabIndex = 1;
-            // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(103, 59);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 2;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            this.name5Label.AutoSize = true;
+            this.name5Label.Location = new System.Drawing.Point(37, 117);
+            this.name5Label.Name = "name5Label";
+            this.name5Label.Size = new System.Drawing.Size(0, 13);
+            this.name5Label.TabIndex = 4;
             // 
             // show5Button
             // 
@@ -457,19 +439,37 @@
             this.show5Button.UseVisualStyleBackColor = true;
             this.show5Button.Click += new System.EventHandler(this.show5Button_Click);
             // 
-            // name5Label
+            // saveButton
             // 
-            this.name5Label.AutoSize = true;
-            this.name5Label.Location = new System.Drawing.Point(37, 117);
-            this.name5Label.Name = "name5Label";
-            this.name5Label.Size = new System.Drawing.Size(0, 13);
-            this.name5Label.TabIndex = 4;
+            this.saveButton.Location = new System.Drawing.Point(103, 59);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 2;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // name5TextBox
+            // 
+            this.name5TextBox.Location = new System.Drawing.Point(78, 33);
+            this.name5TextBox.Name = "name5TextBox";
+            this.name5TextBox.Size = new System.Drawing.Size(100, 20);
+            this.name5TextBox.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Name";
             // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1164, 646);
+            this.ClientSize = new System.Drawing.Size(952, 429);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.work3);
